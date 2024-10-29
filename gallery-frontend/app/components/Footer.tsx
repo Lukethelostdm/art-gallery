@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import artwork from "../artwork.jpg";
-import wavesOpacity from "@/public/wavesOpacity.svg";   
+import wave from "@/public/wave.svg";   
 import Year from "./date";
 import Bern from "@/public/Bern.png"
 
@@ -11,12 +11,6 @@ export default function Footer() {
 
   return (
     <footer className="bg-purple-600">
-      <Image 
-        src={wavesOpacity}
-        alt="background"
-        className="w-max"
-      />
-
       
       <div className="container m-auto space-y-8 px-6 py-16 text-black md:px-12 lg:px-20">
 
@@ -71,7 +65,7 @@ export default function Footer() {
             <h6 className="text-lg font-medium text-cyan-900">About</h6>
             <ul className="mt-4 list-inside space-y-4">
               <li>
-                <a href="./" className="transition hover:text-cyan-600">
+                <a href="./about" className="transition hover:text-cyan-600">
                   History
                 </a>
               </li>
@@ -137,17 +131,17 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" className="transition hover:text-cyan-600">
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-cyan-600">
                   Facebook
                 </a>
               </li>
               <li>
                 <a href="#" className="transition hover:text-cyan-600">
                   Instagram
+                </a>
+              </li>
+              <li>
+                <a href="#" className="transition hover:text-cyan-600">
+                  X
                 </a>
               </li>
             </ul>

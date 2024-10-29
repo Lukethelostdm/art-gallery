@@ -19,3 +19,15 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .underline-animation{
+  @apply relative;
+  }
+
+  .underline-animation ::after{
+    @apply absolute content-[""] w-full h-0.5 left-0 bottom-[-4] bg-green-800 scale-x-0 hover:scale-x-100 transition-transform duration-300
+  }
+}
+
+

@@ -16,14 +16,14 @@ export default function Navbar() {
           <a href="./" className="underline-animation">
             <span>Home</span>
           </a>
-          <a href="./" className="underline-animation">
+          <a href="./images" className="underline-animation">
             <span>Gallery</span>
           </a>
           <a href="./" className="underline-animation">
             <span>Blog</span>
           </a>
           <Image src={artWork} alt="nav-logo" className="w-32" />
-          <a href="./" className="underline-animation">
+          <a href="./about" className="underline-animation">
             <span>About</span>
           </a>
           <a href="./" className="underline-animation">

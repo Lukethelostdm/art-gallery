@@ -28,7 +28,7 @@ export default function Images() {
     fetchImages();
   }, []);
     return(
-      <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 py-4 px-20">
+      <div className="columns-1 sm:columns-2 md:columns-3 md:gap-8 space-y-4 py-4 md:px-40 px-4 gap-2">
       {images.map((image) => (
         <div key={image.public_id} className="mb-4 break-inside-avoid">
           <CldImage

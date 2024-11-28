@@ -12,27 +12,28 @@ export default function Navbar() {
         </h1>
 
         <div className="flex flex-col items-center justify-evenly  gap-4 w-full px-4 sm:flex-row">
-          <a href="./" className="underline-animation">
+          <Link href="/" className="underline-animation">
             <span>Home</span>
-          </a>
-          <a href="./images" className="underline-animation">
+          </Link>
+          <Link href="/images" className="underline-animation">
             <span>Gallery</span>
-          </a>
-          <a href="./" className="underline-animation">
+          </Link>
+          <Link href="/blog" className="underline-animation">
             <span>Blog</span>
-          </a>
+          </Link>
           <Image src={artWork} alt="nav-logo" className="w-32" />
-          <a href="./about" className="underline-animation">
+          <Link href="/about" className="underline-animation">
             <span>About</span>
-          </a>
-          <a href="./" className="underline-animation">
+          </Link>
+          <Link href="/" className="underline-animation">
             <span>Contact</span>
-          </a>
-          <a href="./" className="underline-animation">
+          </Link>
+          <Link href="/" className="underline-animation">
             <span>kofi</span>
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
   );
 }
+      

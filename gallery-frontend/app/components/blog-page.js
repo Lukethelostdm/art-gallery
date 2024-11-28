@@ -1,46 +1,46 @@
-import { getAllPosts } from "../../lib/fullposts";
-import Image from "next/Image";
-import Link from "next/link";
+import { getAllPosts } from '@/lib/fullposts'
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function BlogHome() {
-  const posts = getAllPosts();
+  const posts = getAllPosts()
 
   return (
     <div className="max-w-6xl mx-auto py-8 my-20">
-      <h2 className="text-3xl font-bold text-center mb-8">Blog</h2>
+      <h2 className="text-3xl dark:text-white font-bold text-center mb-8">All Blog Posts</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (
           <div
             key={post.slug}
-            className="bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden transition-shadow duration-300"
-          >
-            {/* IMAGE COMPONENT */}
-            <Link href={`/blog/${post.slug}`}>
+            className="bg-white dark:bg-gray-800 shadow-md hover:shadow-lg rounded-lg overflow-hidden transition-shadow duration-300"
+            >
+            {/* Image */}
+            <Link href={`./posts/${post.slug}`}>
               <Image
                 src={post.img}
                 alt={post.title}
                 width={600}
-                height={400}
-                style={{ width: "100%", height: "auto" }}
+              height={400}
+              layout="responsive"
               />
             </Link>
-            {/* CONTENT COMPONENT */}
+            
+            {/* Content */}
             <div className="p-4">
-              {/* TITLE COMPONENT */}
-              <a href={` /posts/${post.slug}`}>
-                <h3 className=" text-lg font-bold hover:text-blue-400 transition-colors">
+              {/* Title */}
+              <a href={`/posts/${post.slug}`}>
+                <h3 className="text-lg font-semibold dark:text-white text-gray-800 hover:text-blue-500 transition-colors">
                   {post.title}
                 </h3>
               </a>
 
-              {/*META DATA COMPONENT*/}
-              <p className="text-gray-500 text-xs">
-                <span className="font-medium">Author:</span>
-                {post.author}
+              {/* Metadata */}
+              <p className="text-sm text-gray-600 mt-2">
+                <span className="font-medium">Author:</span> {post.author}
               </p>
-              <p className="text-xs text-gray-400">{post.date}</p>
+              <p className="text-xs text-gray-500">{post.date}</p>
 
-              {/*TAG COMPONENT*/}
+              {/* Tag */}
               <span className="inline-block bg-blue-100 text-blue-600 text-xs font-semibold mt-4 py-1 px-3 rounded-full">
                 {post.tag}
               </span>

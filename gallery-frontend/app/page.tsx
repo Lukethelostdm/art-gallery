@@ -1,3 +1,4 @@
+import GetLatestPosts from '@/app/components/latest-posts'
 
 export default function Home() {
   return (
@@ -36,7 +37,7 @@ export default function Home() {
         Blog
       </h2>
       <div>
-        Blog posts * 3 of them
+        <GetLatestPosts/>
       </div>
       </div>
     </main>

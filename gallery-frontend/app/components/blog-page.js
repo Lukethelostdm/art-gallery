@@ -7,12 +7,12 @@ export default function BlogHome() {
 
   return (
     <div className="max-w-6xl mx-auto py-8 my-20">
-      <h2 className="text-3xl dark:text-white font-bold text-center mb-8">All Blog Posts</h2>
+      <h2 className="text-3xl font-bold text-center mb-8">All Blog Posts</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (
           <div
             key={post.slug}
-            className="bg-white dark:bg-gray-800 shadow-md hover:shadow-lg rounded-lg overflow-hidden transition-shadow duration-300"
+            className="bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden transition-shadow duration-300"
             >
             {/* Image */}
             <Link href={`./posts/${post.slug}`}>
@@ -29,7 +29,7 @@ export default function BlogHome() {
             <div className="p-4">
               {/* Title */}
               <a href={`/posts/${post.slug}`}>
-                <h3 className="text-lg font-semibold dark:text-white text-gray-800 hover:text-blue-500 transition-colors">
+                <h3 className="text-lg font-semibold text-gray-800 hover:text-blue-500 transition-colors">
                   {post.title}
                 </h3>
               </a>

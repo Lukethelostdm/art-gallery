@@ -1,8 +1,6 @@
-import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import artwork from "../artwork.jpg";
-import wave from "@/public/wave.svg";   
 import Year from "./date";
 import Bern from "@/public/Bern.png"
 

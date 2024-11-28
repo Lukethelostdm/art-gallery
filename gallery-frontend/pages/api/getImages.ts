@@ -1,7 +1,5 @@
-// pages/api/getImages.js
 import { v2 as cloudinary } from "cloudinary";
 import { NextApiRequest, NextApiResponse } from 'next';
-console.log("Cloudinary Cloud Name:", process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME);
 
 cloudinary.config({
   cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
@@ -9,6 +7,10 @@ cloudinary.config({
   api_secret: process.env.NEXT_PUBLIC_CLOUDINARY_API_SECRET,
 });
 
+interface CloudinaryResource {
+  public_id: string;
+  secure_url: string;
+}
 
 export default async function handler(_req: NextApiRequest, res: NextApiResponse) {
   try {
@@ -17,11 +19,10 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
       type:'upload',
       asset_folder: 'Anna-Art',
       use_asset_folder_as_public_id_prefix: true,
+      max_results: 500,
     });
-    
-    (console.log(result));
 
-    const images = result.resources.map((resource: { public_id: any; secure_url: any; }) => ({
+    const images = result.resources.map((resource: CloudinaryResource) => ({
       public_id: resource.public_id,
       url: resource.secure_url,
     }));

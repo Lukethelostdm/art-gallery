@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import artWork from "../artwork.jpg";
-import wave from "@/public/wave.svg"
 
 export default function Navbar() {
   return (

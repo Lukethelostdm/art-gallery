@@ -1,7 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
 import { CldImage } from "next-cloudinary";
-import Image from "next/image";
 
 interface ImageData {
     public_id: string;
@@ -21,7 +20,7 @@ export default function Images() {
         const data: ImageData[] = await response.json();
         setImages(data);
       } catch (error) {
-        console.log("error");
+        console.error("Failed:", error);
       }
     }
 

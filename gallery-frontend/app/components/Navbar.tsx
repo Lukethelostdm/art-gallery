@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import artWork from "../artwork.jpg";
+import display from "../display.png";
 
 export default function Navbar() {
   return (
@@ -18,7 +18,7 @@ export default function Navbar() {
           <Link href="/blog" className="underline-animation">
             <span>Blog</span>
           </Link>
-          <Image src={artWork} alt="nav-logo" className="w-32" />
+          <Image src={display} alt="nav-logo" className="w-32" />
           <Link href="/about" className="underline-animation">
             <span>About</span>
           </Link>

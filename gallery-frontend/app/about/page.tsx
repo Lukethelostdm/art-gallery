@@ -1,12 +1,11 @@
-import artWork from "../artwork.jpg";
+import display from "../display.png";
 import Image from "next/image";
 
 export default function Page() {
   return (
     <>
-      <h1 className="flex flex-col text-center">A bit more about me.</h1>
 
-      <h2 className="flex flex-col text-center">Biography</h2>
+      <h1 className="flex flex-col text-center text-3xl">Biography</h1>
 
       <div className="flex flex-col sm:flex-row text-center items-center justify-center p-1 mx-auto h-auto w-full">
         <p className="p-2">
@@ -25,7 +24,7 @@ export default function Page() {
           ducimus cupiditate amet ipsam autem atque repellendus eaque tenetur
           nisi commodi odio. Consequatur, ab.
         </p>
-        <Image src={artWork} alt="nav-logo" className="w-1/2 h-auto" />
+        <Image src={display} alt="nav-logo" className="w-1/2 h-auto" />
       </div>
     </>
   );

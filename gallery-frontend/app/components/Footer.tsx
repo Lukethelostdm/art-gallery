@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import artwork from "../artwork.jpg";
+import display from "../display.png";
 import Year from "./date";
 import Bern from "@/public/Bern.png"
+import Link from "next/link";
 
 
 export default function Footer() {
@@ -16,7 +17,7 @@ export default function Footer() {
           <Image
             width="100"
             height="42"
-            src={artwork}
+            src={display}
             alt="Curly Marimoo"
             className="w-32"
           />
@@ -83,6 +84,11 @@ export default function Footer() {
                   Reviews
                 </a>
               </li>
+              <li>
+                <Link href="/characters" className="transition hover:text-cyan-600">
+                  Characters
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -92,6 +98,11 @@ export default function Footer() {
               <li>
                 <a href="#" className="transition hover:text-cyan-600">
                   Equipment
+                </a>
+              </li>
+              <li>
+                <a href="#" className="transition hover:text-cyan-600">
+                  Supplies
                 </a>
               </li>
             </ul>

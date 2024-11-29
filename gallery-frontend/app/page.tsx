@@ -5,33 +5,10 @@ export default function Home() {
     <>
     <main>
       <div>
-      <h1>
-        Featured Art
-      </h1>
-      <div>
-        Art goes here *3 of them
+        <h1>
+          Welcome!
+        </h1>
       </div>
-      </div>
-
-      <div>
-      <h2>
-        Contact
-      </h2>
-      <div>
-        Contact info
-      </div>
-      </div>
-
-      <div>
-      <h2>
-        Commission Work
-      </h2>
-      <div>
-        Comission Work * 3 go here
-      </div>
-      </div>
-
-
       <div>
       <h2>
         Blog

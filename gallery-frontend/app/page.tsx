@@ -9,7 +9,7 @@ export default function Home() {
           Welcome!
         </h1>
         <p className=' text-center mx-auto'>
-          Thank you for checking out my portfolio, <br></br> I&aposm excited to share my work with you. If you have any questions or would like to collaborate, please don&apost hesitate to reach out
+          Thank you for checking out my portfolio, <br></br> I&apos;m excited to share my work with you. If you have any questions or would like to collaborate, please don&apos;t hesitate to reach out
         </p>
       </div>
       <div>

@@ -5,14 +5,14 @@ export default function Home() {
     <>
     <main>
       <div>
-        <h1>
+        <h1 className=' text-3xl font-bold text-center'>
           Welcome!
         </h1>
+        <p className=' text-center mx-auto'>
+          Thank you for checking out my portfolio, <br></br> I'm excited to share my work with you. If you have any questions or would like to collaborate, please don't hesitate to reach out
+        </p>
       </div>
       <div>
-      <h2>
-        Blog
-      </h2>
       <div>
         <GetLatestPosts/>
       </div>

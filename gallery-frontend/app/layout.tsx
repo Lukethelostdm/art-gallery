@@ -31,7 +31,7 @@ export default function RootLayout({
         sizes="<generated>"
       />
       </head>
-      <body>
+      <body className='bg-back' >
         <Navbar />
         {children}
         <Footer />

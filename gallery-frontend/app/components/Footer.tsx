@@ -8,9 +8,9 @@ import Bern from "@/public/Bern.png"
 export default function Footer() {
 
   return (
-    <footer className="bg-purple-600">
+    <footer className="bg-nav">
       
-      <div className="container m-auto space-y-8 px-6 py-16 text-black md:px-12 lg:px-20">
+      <div className="container m-auto space-y-8 px-6 py-16 text-text md:px-12 lg:px-20">
 
         <div className="flex flex-wrap items-center justify-between gap-4 bottom-0">
           <Image
@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-5">
 
           <div>
-            <h6 className="text-lg font-medium text-cyan-900">About</h6>
+            <h6 className="text-lg font-medium text-font">About</h6>
             <ul className="mt-4 list-inside space-y-4">
               <li>
                 <a href="./about" className="transition hover:text-cyan-600">
@@ -76,7 +76,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h6 className="text-lg font-medium text-cyan-900">Illustrator</h6>
+            <h6 className="text-lg font-medium text-font">Illustrator</h6>
             <ul className="mt-4 list-inside space-y-4">
               <li>
                 <a href="#" className="transition hover:text-cyan-600">
@@ -87,7 +87,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h6 className="text-lg font-medium text-cyan-900">Resources</h6>
+            <h6 className="text-lg font-medium text-font">Resources</h6>
             <ul className="mt-4 list-inside space-y-4">
               <li>
                 <a href="#" className="transition hover:text-cyan-600">
@@ -99,7 +99,7 @@ export default function Footer() {
 
 
           <div>
-            <h6 className="text-lg font-medium text-cyan-900">Support</h6>
+            <h6 className="text-lg font-medium text-font">Support</h6>
             <ul className="mt-4 list-inside space-y-4">
               <li>
                 <a href="#" className="transition hover:text-cyan-600">
@@ -120,7 +120,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h6 className="text-lg font-medium text-cyan-900">Contact</h6>
+            <h6 className="text-lg font-medium text-font">Contact</h6>
             <ul className="mt-4 list-inside space-y-4">
               <li>
                 <a href="#" className="transition hover:text-cyan-600">

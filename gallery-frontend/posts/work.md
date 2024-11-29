@@ -1,5 +1,5 @@
 ---
-title: "testing 3"
+title: "Blog"
 date: "2024/11/12"
 author: "me"
 tag: "write"

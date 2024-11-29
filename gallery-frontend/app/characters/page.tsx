@@ -1,4 +1,3 @@
-import display from "@/app/display.png"
 import Characters from "../components/character"
 
 

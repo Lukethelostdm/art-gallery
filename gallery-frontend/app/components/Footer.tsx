@@ -135,11 +135,6 @@ export default function Footer() {
             <ul className="mt-4 list-inside space-y-4">
               <li>
                 <a href="#" className="transition hover:text-cyan-600">
-                  Email
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-cyan-600">
                   Facebook
                 </a>
               </li>

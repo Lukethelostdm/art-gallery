@@ -18,6 +18,7 @@ export default function Characters() {
                     alt="Character 1"
                     width={600}
                     height={400}
+                    className="w-1/2"
                 />
             </div>
 
@@ -27,6 +28,7 @@ export default function Characters() {
                     alt="Character 1"
                     width={600}
                     height={400}
+                    className="w-1/2"
                 />
                 <p className="text-center justify-center">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur corrupti dolorem dignissimos consequuntur sapiente magni iste exercitationem a assumenda eius. Et omnis deleniti exercitationem, ducimus nesciunt fuga asperiores illo facilis.
@@ -42,6 +44,7 @@ export default function Characters() {
                     alt="Character 1"
                     width={600}
                     height={400}
+                    className="w-1/2"
                 />
             </div>
 
@@ -51,6 +54,7 @@ export default function Characters() {
                     alt="Character 1"
                     width={600}
                     height={400}
+                    className="w-1/2"
                 />
                 <p className="text-center justify-center">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur corrupti dolorem dignissimos consequuntur sapiente magni iste exercitationem a assumenda eius. Et omnis deleniti exercitationem, ducimus nesciunt fuga asperiores illo facilis.
@@ -66,6 +70,7 @@ export default function Characters() {
                     alt="Character 1"
                     width={600}
                     height={400}
+                    className="w-1/2"
                 />
             </div>
 
@@ -75,6 +80,7 @@ export default function Characters() {
                     alt="Character 1"
                     width={600}
                     height={400}
+                    className="w-1/2"
                 />
                 <p className="text-center justify-center">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur corrupti dolorem dignissimos consequuntur sapiente magni iste exercitationem a assumenda eius. Et omnis deleniti exercitationem, ducimus nesciunt fuga asperiores illo facilis.

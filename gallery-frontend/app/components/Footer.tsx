@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import display from "../display.png";
 import Year from "./date";
-import Bern from "@/public/Bern.png"
+import Luke from "@/public/Luke.png"
 import Link from "next/link";
 
 
@@ -159,10 +159,10 @@ export default function Footer() {
         </div>
 
         
-          <div className="flex flex-row sm:flex-col  justify-evenly px-4 py-3 text-black">
+          <div className="flex flex-row sm:flex-col mx-auto justify-evenly items-center text-black">
             <div>
-              <h3 className="flex sm:flex-row flex-col w-max text-base justify-between gap-4 mx-auto">
-                &copy; Luke Mcnicol. <Image src={Bern} height="100" width="100" alt="Bern" className="w-10 h-10"/> <Year/> All Rights Reserved.
+              <h3 className="flex sm:flex-row flex-col w-max text-center justify-evenly gap-4 mx-auto">
+                &copy; Luke Mcnicol. <Image src={Luke} height="100" width="100" alt="Bern" className="w-1/5 mx-auto"/> <Year/> All Rights Reserved.
               </h3>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import GetLatestPosts from '@/app/components/latest-posts'
+import Features from './featured/page'
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
         </p>
       </div>
       <div>
+        <Features/>
+
       <div>
         <GetLatestPosts/>
       </div>

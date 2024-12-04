@@ -22,7 +22,7 @@ export default function Navbar() {
           <Link href="/about" className="underline-animation">
             <span>About</span>
           </Link>
-          <Link href="/" className="underline-animation">
+          <Link href="/contact" className="underline-animation">
             <span>Contact</span>
           </Link>
           <Link href="/" className="underline-animation">

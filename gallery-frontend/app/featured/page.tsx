@@ -40,7 +40,7 @@ export default function Features() {
                                     height="200"
                                     src={image.public_id}
                                     alt="Cloudinary image"
-                                    className="rounded-lg w-full"
+                                    className="rounded-lg w-full align-middle justify-center h-full"
                                 />
                             </div>
                         ))}

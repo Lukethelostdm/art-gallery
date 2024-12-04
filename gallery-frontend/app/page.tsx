@@ -1,5 +1,6 @@
 import GetLatestPosts from '@/app/components/latest-posts'
 import Features from './featured/page'
+import { ContactForm } from './components/form';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           Thank you for checking out my portfolio, <br></br> I&apos;m excited to share my work with you. If you have any questions or would like to collaborate, please don&apos;t hesitate to reach out
         </p>
       </div>
+      <ContactForm/>
       <div>
         <Features/>
 

@@ -131,7 +131,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h6 className="text-lg font-medium text-font">Contact</h6>
+            <h6 className="text-lg font-medium text-font">Connect</h6>
             <ul className="mt-4 list-inside space-y-4">
               <li>
                 <a href="#" className="transition hover:text-cyan-600">

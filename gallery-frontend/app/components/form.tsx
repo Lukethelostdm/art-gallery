@@ -2,7 +2,6 @@
 import { FormEvent, useState } from "react";
 
 export const ContactForm = () => {
-  const [isSubmitted, setSubmitted] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -27,20 +26,13 @@ export const ContactForm = () => {
     }
   };
 
-  return isSubmitted ? (
-    <div>
-      <h1
-        className="text-center font-semibold text-3xl"
-      >
-        Thank you for your message!
-      </h1>
-    </div>
-  ) : (
+  return (
     <form
       onSubmit={onSubmit}
       className="flex flex-col mx-auto max-w-md my-20 gap-2 text-center align-baseline"
     >
       <h1 className="text-3xl">Contact Me</h1>
+
 
       <label className="label font-semibold text-start">
         <span className="label-text">Full Name</span>
@@ -53,6 +45,7 @@ export const ContactForm = () => {
         className="text-center rounded-lg"
       />
 
+
       <label className="label font-semibold align-baseline text-start">
         <span className="label-text">Email</span>
       </label>
@@ -64,6 +57,7 @@ export const ContactForm = () => {
         className="text-center rounded-lg"
       />
 
+
       <label className="label font-semibold text-start">
         <span className="label-text">Message</span>
       </label>
@@ -74,12 +68,13 @@ export const ContactForm = () => {
         className="min-h-32 text-center rounded-lg "
       ></textarea>
 
+
       <button
-        type="submit"
-        className="bg-nav hover:bg-text text-text hover:text-nav font-bold py-2"
-      >
+       type="submit"
+       className="bg-nav hover:bg-text text-text hover:text-nav font-bold py-2"
+       >
         Submit
-      </button>
+        </button>
     </form>
   );
 };

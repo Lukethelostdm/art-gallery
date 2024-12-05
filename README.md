@@ -34,13 +34,13 @@ Make sure you have the following installed:
 2. Install dependencies:
    npm install
 
-# or
+     or
 
 yarn install
 
 ## Running the Application
 npm run dev
-# or
+    or
 yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your web browser to see the application.

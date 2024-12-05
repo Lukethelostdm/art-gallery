@@ -9,7 +9,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  console.log("Data", req.body);
   const { name, email, message } = req.body;
 
   const mailgun = new Mailgun(FormData);
@@ -33,6 +32,7 @@ export default async function handler(
     console.log(emailRes)
   } catch (err) {
     console.error("Error sending email:", err);
+    return res.status(500).json({ error: "An error occured while sending your email."})
   }
 
   res.status(200).json({ submitted: true });

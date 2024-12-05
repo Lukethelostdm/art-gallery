@@ -50,6 +50,7 @@ export const ContactForm = () => {
         value={name}
         onChange={(e) => setName(e.target.value)}
         type="text"
+        required
         placeholder="Your Name"
         className="text-center rounded-lg font-Anaheim"
       />
@@ -62,6 +63,7 @@ export const ContactForm = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         type="email"
+        required
         placeholder="yourname@example.com"
         className="text-center rounded-lg font-Anaheim"
       />
@@ -75,6 +77,7 @@ export const ContactForm = () => {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         className="min-h-32 text-center rounded-lg font-Anaheim "
+        required
       ></textarea>
 
 

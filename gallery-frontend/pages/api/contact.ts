@@ -17,7 +17,7 @@ export default async function handler(
 
   const messageData = {
     from: `${name} <${email}>`,
-    to: ["contact@curlymarimoo.se"],
+    to: `${process.env.MAILGUN_FROM_EMAIL}`,
     subject: "New Contact Form Submission",
     text: `Hello,
     you have a new form entry from: ${name} ${email}

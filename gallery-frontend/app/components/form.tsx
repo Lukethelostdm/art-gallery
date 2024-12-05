@@ -5,12 +5,13 @@ export const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [confirmationMessage, setConfirmationMessage] = useState("");
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
     try {
-      await fetch("/api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         body: JSON.stringify({
           name,
@@ -21,6 +22,14 @@ export const ContactForm = () => {
           "Content-Type": "application/json",
         },
       });
+      if (response.ok) {
+        setConfirmationMessage("Your message has been sent!");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        setConfirmationMessage("Error sending message");
+      }
     } catch (err) {
       console.error("Error", err);
     }
@@ -31,10 +40,10 @@ export const ContactForm = () => {
       onSubmit={onSubmit}
       className="flex flex-col mx-auto max-w-md my-20 gap-2 text-center align-baseline"
     >
-      <h1 className="text-3xl">Contact Me</h1>
+      <h1 className="text-3xl font-Jura ">Contact Me</h1>
 
 
-      <label className="label font-semibold text-start">
+      <label className="label font-semibold text-start font-Anaheim">
         <span className="label-text">Full Name</span>
       </label>
       <input
@@ -42,11 +51,11 @@ export const ContactForm = () => {
         onChange={(e) => setName(e.target.value)}
         type="text"
         placeholder="Your Name"
-        className="text-center rounded-lg"
+        className="text-center rounded-lg font-Anaheim"
       />
 
 
-      <label className="label font-semibold align-baseline text-start">
+      <label className="label font-semibold align-baseline text-start font-Anaheim">
         <span className="label-text">Email</span>
       </label>
       <input
@@ -54,18 +63,18 @@ export const ContactForm = () => {
         onChange={(e) => setEmail(e.target.value)}
         type="email"
         placeholder="yourname@example.com"
-        className="text-center rounded-lg"
+        className="text-center rounded-lg font-Anaheim"
       />
 
 
-      <label className="label font-semibold text-start">
+      <label className="label font-semibold text-start font-Anaheim">
         <span className="label-text">Message</span>
       </label>
       <textarea
         placeholder="Type your message here..."
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        className="min-h-32 text-center rounded-lg "
+        className="min-h-32 text-center rounded-lg font-Anaheim "
       ></textarea>
 
 
@@ -75,6 +84,10 @@ export const ContactForm = () => {
        >
         Submit
         </button>
+
+        {confirmationMessage && (
+          <p className="text-text text-center mt-4 font-Anaheim">{confirmationMessage}</p>
+        )}
     </form>
   );
 };

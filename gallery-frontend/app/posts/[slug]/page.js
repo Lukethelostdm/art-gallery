@@ -15,12 +15,11 @@ export async function generateStaticParams() {
 }
 
 async function fetchPost(slug) {
-  const posts = getAllPosts(); // Make sure this returns the expected posts
+  const posts = getAllPosts(); 
   return posts.find((post) => post.slug === slug);
 }
 
 export default async function Post({ params }) {
-  // Ensure params are awaited
   const { slug } = await params;
 
 

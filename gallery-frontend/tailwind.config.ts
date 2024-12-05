@@ -17,6 +17,11 @@ const config: Config = {
         back: "#748D92",
 
       },
+      fontFamily: {
+        'Jura': ["Jura"],
+        'Anaheim': ["Anaheim"],
+        'Neo': ["GFS Neohellenic"],
+      },
     },
   },
   plugins: [],

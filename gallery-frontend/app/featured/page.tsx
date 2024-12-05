@@ -31,7 +31,7 @@ export default function Features() {
         <>
             <main>
                 <div className="flex flex-col items-center">
-                    <h2 className="text-2xl font-bold mt-8">Latest Uploads</h2>
+                    <h2 className="text-2xl font-bold mt-8 font-Jura underline">Latest Uploads</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-auto px-24 py-8">
                         {images.map((image) => (
                             <div key={image.public_id} className="mb-4">

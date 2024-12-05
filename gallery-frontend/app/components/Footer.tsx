@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import display from "../display.png";
 import Year from "./date";
-import Luke from "@/public/Luke.png"
 import Link from "next/link";
 
 
@@ -11,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="bg-nav">
       
-      <div className="container m-auto space-y-8 px-6 py-16 text-text md:px-12 lg:px-20">
+      <div className="container m-auto space-y-8 px-6 py-16 text-text md:px-12 lg:px-20 font-Anaheim">
 
         <div className="flex flex-wrap items-center justify-between gap-4 bottom-0">
           <Image
@@ -153,11 +152,12 @@ export default function Footer() {
 
         </div>
 
-        
-          <div className="flex flex-row sm:flex-col mx-auto justify-evenly items-center text-black">
+
+        {/*DEVELOPER INFO*/}        
+          <div className="flex flex-row sm:flex-col mx-auto justify-evenly items-center text-font align-baseline">
             <div>
-              <h3 className="flex sm:flex-row flex-col w-max text-center justify-evenly gap-4 mx-auto">
-                &copy; Luke Mcnicol. <Image src={Luke} height="100" width="100" alt="Bern" className="w-1/5 mx-auto"/> <Year/> All Rights Reserved.
+              <h3 className="flex sm:flex-row flex-col w-max text-center justify-evenly gap-2 mx-auto mt-16">
+                &copy; Luke Mcnicol. <Year/> All Rights Reserved.
               </h3>
             </div>
           </div>

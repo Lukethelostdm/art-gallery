@@ -83,7 +83,7 @@ export const ContactForm = () => {
 
       <button
        type="submit"
-       className="bg-nav hover:bg-text text-text hover:text-nav font-bold py-2"
+       className="bg-nav hover:bg-text text-text hover:text-nav font-bold py-2 rounded-lg "
        >
         Submit
         </button>

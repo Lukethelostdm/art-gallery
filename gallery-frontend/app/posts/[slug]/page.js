@@ -34,9 +34,9 @@ export default async function Post({ params }) {
       {/* Back Button */}
       <Link
         href="/blog"
-        className="inline-block mb-6 text-blue-600 hover:text-blue-800 transition-colors"
+        className="inline-block mb-6 text-text hover:text-nav transition-colors"
       >
-        ← Back to studies
+        ← Back to Blog
       </Link>
 
       {/* Featured Image */}

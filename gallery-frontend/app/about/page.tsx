@@ -5,9 +5,9 @@ export default function Page() {
   return (
     <>
 
-      <h1 className="flex flex-col text-center text-3xl">Biography</h1>
+      <h1 className="flex flex-col text-center text-3xl font-Jura my-4">Biography</h1>
 
-      <div className="flex flex-col sm:flex-row text-center items-center justify-center p-1 mx-auto h-auto w-full">
+      <div className="flex flex-col-reverse sm:flex-row text-center items-center justify-center my-4 px-16 mx-auto h-auto w-full font-Anaheim ">
         <p className="p-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
           sint vero voluptatum ut minima, accusamus voluptatibus officia
@@ -24,7 +24,10 @@ export default function Page() {
           ducimus cupiditate amet ipsam autem atque repellendus eaque tenetur
           nisi commodi odio. Consequatur, ab.
         </p>
-        <Image src={display} alt="nav-logo" className="w-1/2 h-auto" />
+        <Image 
+        src={display}
+        alt="nav-logo"
+        className="w-1/2 h-auto" />
       </div>
     </>
   );

@@ -4,7 +4,6 @@ import display from "../display.png";
 import Year from "./date";
 import Link from "next/link";
 
-
 export default function Footer() {
 
   return (
@@ -157,7 +156,7 @@ export default function Footer() {
           <div className="flex flex-row sm:flex-col mx-auto justify-evenly items-center text-font align-baseline">
             <div>
               <h3 className="flex sm:flex-row flex-col w-max text-center justify-evenly gap-2 mx-auto mt-16">
-                &copy; Luke Mcnicol. <Year/> All Rights Reserved.
+                &copy; <a href="https://www.lukethewebdev.uk/" target="_blank" >Luke Mcnicol.</a> <Year/> All Rights Reserved.
               </h3>
             </div>
           </div>

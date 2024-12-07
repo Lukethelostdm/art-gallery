@@ -35,7 +35,7 @@ export default function Images() {
             height="400"
             src={image.public_id}
             alt="Cloudinary image"
-            className="rounded-lg w-full"
+            className="rounded-lg w-full sm:hover:scale-110 duration-300 sm:hover:drop-shadow-2xl"
           />
         </div>
       ))}

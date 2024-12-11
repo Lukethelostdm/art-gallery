@@ -11,10 +11,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        nav: "#124E66",
-        font: "#748D92",
-        text: "#D3D9D4",
-        back: "#748D92",
+        nav: "#8B0000",
+        font: "#B22222",
+        text: "#F5E6E6",
+        back: "#CD5C5C",
 
       },
       fontFamily: {
